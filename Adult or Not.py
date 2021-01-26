@@ -5,7 +5,7 @@
 # Solve some bug and simplified the part of calculating age.
 
 # 2021/01/23 20:22:25 Daniel Chen
-# Adult or Not -- Daniel Chen's first project.
+# Adult or Not -- Daniel Chen's first python project.
 
 import time
 print('what is your birthday?')
