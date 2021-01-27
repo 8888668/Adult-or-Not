@@ -2,7 +2,7 @@
 # Solve bugs.
 
 # 2021/01/24 10:59:49 Daniel Chen
-# Solve some bug and simplified the part of calculating age.
+# Solve some bugs and simplified the part of calculating age.
 
 # 2021/01/23 20:22:25 Daniel Chen
 # Adult or Not -- Daniel Chen's first python project.
@@ -11,10 +11,7 @@ import time
 print('what is your birthday?')
 
 date = ['year', 'month', 'day', 'adult']
-# Let the following code be able.
-
-greater_month = [1, 3, 5, 7, 8, 10, 12]
-# Preparing detect the enter is a day or not.
+# Controls whether the following code works.
 
 while 'adult' in date:
     date.append('play')
@@ -34,7 +31,7 @@ while 'adult' in date:
 
         else:
             date.remove('year')
-            # Stop asking you birth year.
+            # Stop asking about your birth year.
 
     while 'month' in date:
         birth_month = input('month:').strip()
@@ -45,7 +42,7 @@ while 'adult' in date:
 
         elif int(birth_month) not in list(range(1, 13)):
             print('Please enter a suitable month.')
-            # Make sure the enter is a month.
+            # Ensure the enter is a month.
 
         elif int(birth_year) == int(time.strftime('%Y')):
             if int(birth_month) > int(time.strftime('%m')):
@@ -56,7 +53,7 @@ while 'adult' in date:
                 date.remove('month')
         else:
             date.remove('month')
-            # stop asking about your birth month.
+            # Stop asking about your birth month.
 
     while 'day' in date:
         birth_day = input('day:').strip()
@@ -69,6 +66,7 @@ while 'adult' in date:
             print('Please enter a suitable number.')
             # Make sure the enter is a day.
 
+        greater_month = [1, 3, 5, 7, 8, 10, 12]
         elif int(birth_day) == 31 and int(birth_month) not in greater_month:
             print("No 31th in your birth month.")
             # Make sure you haven't enter 31 with a common month.
@@ -89,13 +87,13 @@ while 'adult' in date:
                     print("No 2.29 in your birth year.")
             else:
                 date.remove('day')
-                # Make sure the enter which is 
+                # Make sure the enter is an real day which is in february.
         elif int(birth_month) == int(time.strftime('%m')):
             if int(birth_day) > int(time.strftime('%d')):
                 print('You are not bron yet.')
             else:
                 date.remove('day')
-                # Ensure the enter is an real day.
+                # Make sure the enter is an real day.
 
         else:
             date.remove('day')
@@ -115,7 +113,7 @@ while 'adult' in date:
             age = blurry_age - 1
         else:
             age = blurry_age
-            # Calculate the age.
+            # Calculate your age.
 
     age = str(age)
     if int(age) >= 18:
@@ -126,12 +124,14 @@ while 'adult' in date:
 
     while 'play' in date:
         play = input('Do you want to play it again?\n').strip().lower()
+        
         if play == 'yes' or 'no':
             if play == 'yes':
                 date.extend(['year', 'month', 'day'])
             elif play == 'no':
                 date.remove('adult')
             date.remove('play')
+        
         else:
             print('\nPlease enter as Yes or No.')
             # Asking you want to play it again or not.
