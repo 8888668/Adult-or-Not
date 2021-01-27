@@ -18,7 +18,7 @@ greater_month = [1, 3, 5, 7, 8, 10, 12]
 
 while 'adult' in date:
     date.append('play')
-    # Start the while which is asking you want to play it again or not.
+    #  Prepare for the following code group.
 
     while 'year' in date:
         birth_year = input('Year:').strip()
