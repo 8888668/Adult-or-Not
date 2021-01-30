@@ -1,14 +1,7 @@
-# 2021/01/28 11:37:42 Daniel Chen
-# Solve bugs.
-
-# 2021/01/25 10:24:07 Daniel Chen
-# Solve bugs.
-
-# 2021/01/24 10:59:49 Daniel Chen
-# Solve some bugs and simplified the part of calculating age.
-
-# 2021/01/23 20:22:25 Daniel Chen
-# Adult or Not -- Daniel Chen's first python project.
+'''
+Created at 2021/01/23 20:22:25
+Author: Daniel Chen
+'''
 
 import time
 print('what is your birthday?')
