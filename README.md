@@ -10,4 +10,4 @@ There will be no version above v1.0, this is the peak when it was born.
 
 ![Release](https://img.shields.io/github/release/8888668/Adult-or-Not)
 ![Support](https://img.shields.io/badge/Windows10-blue?logo=Windows)
-![Support](https://img.shields.io/badge/MacOS-blue?logo=Mac)
+![Support](https://img.shields.io/badge/MacOS-blue?logo=apple)
