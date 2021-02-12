@@ -86,7 +86,8 @@ while 'adult' in date:
                     print("No 2.29 in your birth year.")
             else:
                 date.remove('day')
-                # Make sure the enter is an real day which is in february.
+                # If the birth month is in february,
+                # make sure the enter is a real day.
 
         elif int(birth_year) == int(time.strftime('%Y')):
             if int(birth_day) > int(time.strftime('%d')) \
@@ -94,7 +95,7 @@ while 'adult' in date:
                 print('You are not bron yet.')
             else:
                 date.remove('day')
-                # Make sure the enter is an real day.
+                # Make sure the enter isn't bigger than today.
 
         else:
             date.remove('day')
